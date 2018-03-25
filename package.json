@@ -1,6 +1,9 @@
 {
   "name": "defcon-node-api",
   "version": "1.0.0",
+  "engines":{
+    "node": "7.10.0"
+  },
   "description": "simple RESTful api for defcon streamer app",
   "main": "server.js",
   "scripts": {
