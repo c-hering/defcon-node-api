@@ -5,7 +5,7 @@ exports.geturl = (req,res) => {
   if(typeof req.params.urlAddition === 'undefined'){
     url = "https://media.defcon.org/"
   }else{
-    let addition = req.params.urlAddition.replace(/_/g, "/")
+    let addition = req.params.urlAddition.replace(/&/g, "/")
     url = "https://media.defcon.org/" + addition;
   }
   tabletojson.convertUrl(url).then(table => {
