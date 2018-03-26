@@ -9,7 +9,7 @@ exports.geturl = (req,res) => {
     url = "https://media.defcon.org/" + addition;
   }
   tabletojson.convertUrl(url).then(table => {
-    table = JSON.parse(JSON.stringify(table).replace(/\s|↓/gi,"_").toLowerCase());
+    table = JSON.parse(JSON.stringify(table).replace(/\s|↓/gi,"_"));
     res.json(table);
   })
 };
